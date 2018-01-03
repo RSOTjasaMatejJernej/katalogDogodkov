@@ -1,7 +1,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: katalog-service-monitor
+  name: katalogdogodkov-service-monitor
   labels:
     team: katalogteam
 spec:
