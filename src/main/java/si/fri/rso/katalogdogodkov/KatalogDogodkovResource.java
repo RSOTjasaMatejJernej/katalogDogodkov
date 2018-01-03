@@ -35,7 +35,7 @@ public class KatalogDogodkovResource {
 
     @GET
     @Path("{dogodekId}")
-    public Response getProfil(@PathParam("dogodekId") Integer dogodekId) {
+    public Response getDogodek(@PathParam("dogodekId") Integer dogodekId) {
         Dogodek dogodek = Database.getDogodek(dogodekId.toString());
         return dogodek != null
                 ? Response.ok(dogodek).build()
