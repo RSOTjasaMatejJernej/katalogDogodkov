@@ -47,7 +47,7 @@ public class KatalogDogodkovResource {
         List<Dogodek> dogodeks = Database.getDogodeks();
         boolean add = true;
         for(int i=0; i<dogodeks.size(); i++){
-            if(dogodek.getId() == dogodeks.get(i).getId()){
+            if(dogodek.getId().equals(dogodeks.get(i).getId())){
                 dogodeks.get(i).setTitle(dogodek.getTitle());
                 dogodeks.get(i).setAbout(dogodek.getAbout());
                 add=false;
