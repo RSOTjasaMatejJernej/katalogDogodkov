@@ -9,11 +9,11 @@ public class Database {
     private static List<Dogodek> dogodeks = new ArrayList<>();
 
     public static List<Dogodek> getDogodeks() {
-        Dogodek cus = new Dogodek();
+        /*Dogodek cus = new Dogodek();
         cus.setId("1");
         cus.setTitle("Novoletno praznovanje");
         cus.setAbout("Praznovanje novega leta na križarki čez Ljubljanico.");
-        dogodeks.add(cus);
+        dogodeks.add(cus);*/
 
         return dogodeks;
     }

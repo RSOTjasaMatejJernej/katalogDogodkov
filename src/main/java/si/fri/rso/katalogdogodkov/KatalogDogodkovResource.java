@@ -44,7 +44,18 @@ public class KatalogDogodkovResource {
 
     @POST
     public Response addNewDogodek(Dogodek dogodek) {
-        Database.addDogodek(dogodek);
+        List<Dogodek> dogodeks = Database.getDogodeks();
+        boolean add = true;
+        for(int i=0; i<dogodeks.size(); i++){
+            if(dogodek.getId() == dogodeks.get(i).getId()){
+                dogodeks.get(i).setTitle(dogodek.getTitle());
+                dogodeks.get(i).setAbout(dogodek.getAbout());
+                add=false;
+            }
+        }
+        if(add) {
+            Database.addDogodek(dogodek);
+        }
         return Response.ok(dogodek).build();
     }
 
