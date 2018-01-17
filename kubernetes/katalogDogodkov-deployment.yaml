@@ -10,7 +10,7 @@ spec:
         app: katalog-dogodkov
     spec:
       containers:
-      - image: tjasaj/katalog-dogodkov:0.01
+      - image: tjasaj/katalog-dogodkov:0.02
         name: katalog-dogodkov
         env:
           - name: KUMULUZEE_DISCOVERY_CLUSTER
