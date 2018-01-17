@@ -51,6 +51,7 @@ public class KatalogDogodkovResource {
                 dogodeks.get(i).setTitle(dogodek.getTitle());
                 dogodeks.get(i).setAbout(dogodek.getAbout());
                 add=false;
+                break;
             }
         }
         if(add) {
